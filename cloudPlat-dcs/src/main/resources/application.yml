@@ -1,0 +1,15 @@
+spring:
+  profiles:
+     active: s1
+  application:
+    name: service-dcs
+    
+  data:
+    elasticsearch:
+      cluster-name: cloudPlat
+      cluster-nodes: 192.168.6.88:9300,192.168.6.89:9300,192.168.6.90:9300
+      repositories:
+        enabled: true
+        
+     
+debug: true

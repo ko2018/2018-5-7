@@ -1,0 +1,8 @@
+eureka:
+  instance:
+    hostname: host90
+  client:
+    serviceUrl:
+      defaultZone: http://host88:8210/eureka/,http://host89:8210/eureka/,http://host90:8210/eureka/
+server:
+  port: 8220

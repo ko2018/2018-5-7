@@ -1,0 +1,11 @@
+server:
+  port: 8210
+eureka:
+  instance:
+    hostname: peer1
+  client:
+    serviceUrl:
+      defaultZone: http://peer1:8210/eureka/,http://peer2:8211/eureka/,http://peer3:8212/eureka/
+      
+#defaultZone 使用机器hostname
+#网上说：在配置文件中如果不使用域名的方式，而指定localhost或者ip(127.0.0.1/外网ip)，服务能够正常启动，但分片服务总显示在unavailable-replicas中，因此在host中指定了相应的域名做服务区分

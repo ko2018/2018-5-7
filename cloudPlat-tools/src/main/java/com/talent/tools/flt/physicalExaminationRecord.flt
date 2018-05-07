@@ -1,0 +1,45 @@
+package ${packageDomain};
+
+import java.io.Serializable;
+
+/**
+ * ${annotation}
+ * @author wangdj
+ * ${date}
+ */
+public class PhysicalExaminationRecord implements Serializable
+{
+	private static final long serialVersionUID = 1L;
+	
+	<#list propertyList as item>
+    /**
+      * snlId: ${item.fullRelation}
+      * <p>${(item.nameCn)?default('')}</p> 
+      * <p>${(item.nameUs)?default('')}</p>
+      */
+    public ${item.javaType} ${item.propertyName};
+    
+    </#list>
+
+    <#list propertyList as item>
+    /**
+     * <p>${(item.nameCn)?default('')}</p> 
+     * <p>${(item.nameUs)?default('')}</p>
+     * @return ${item.javaType}
+     */
+    public ${item.javaType} get${item.propertyName?cap_first}(){
+        return this.${item.propertyName};
+    }
+
+    /**
+     * <p>${(item.nameCn)?default('')}</p> 
+     * <p>${(item.nameUs)?default('')}</p>
+     * @param ${item.propertyName}
+     */
+    public void set${item.propertyName?cap_first}(${item.javaType} ${item.propertyName}){
+        this.${item.propertyName} = ${item.propertyName};
+    }
+    
+    </#list>
+
+}
