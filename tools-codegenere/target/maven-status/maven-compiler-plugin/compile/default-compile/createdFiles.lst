@@ -1,0 +1,8 @@
+com\fuwenpan\tools\codegenere\entity\Table.class
+com\fuwenpan\tools\codegenere\util\StringUtil.class
+com\fuwenpan\tools\codegenere\util\JdbcTest.class
+com\fuwenpan\tools\codegenere\entity\Database.class
+com\fuwenpan\tools\codegenere\entity\Column.class
+com\fuwenpan\tools\codegenere\sercvice\MysqlServiceImpl.class
+com\fuwenpan\tools\codegenere\util\BeanUtil.class
+com\fuwenpan\tools\codegenere\dao\MysqlDao.class

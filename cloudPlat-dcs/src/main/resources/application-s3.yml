@@ -1,8 +1,8 @@
 eureka:
   instance:
-    hostname: peer3
+    hostname: host88
   client:
     serviceUrl:
-      defaultZone: http://peer1:8210/eureka/,http://peer2:8211/eureka/,http://peer3:8212/eureka/
+      defaultZone: http://host88:8210/eureka/,http://host89:8210/eureka/,http://host90:8210/eureka/
 server:
-  port: 8222
+  port: 8220
